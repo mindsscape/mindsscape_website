@@ -44,11 +44,17 @@
 
 
     <!-- Navbar Start -->
+    <style>
+        .scape {
+            background-color: white;
+            color: rgb(32, 74, 165);
+        }
+    </style>
     <div class="container-fluid sticky-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark p-0">
                 <a href="index.html" class="navbar-brand">
-                    <h1 class="text-white">Mindsscape</h1>
+                    <h1 class="text-white"><span class="scape">Mindsscape</span></h1>
                 </a>
                 <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
@@ -97,7 +103,7 @@
         <div class="container pt-5">
             <div class="row g-5 pt-5">
                 <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
-                    <h1 class="display-4 text-white mb-4 animated slideInRight">cloud Services</h1>
+                    <h1 class="display-4 text-white mb-4 animated slideInRight">Career</h1>
                     <!-- <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center justify-content-lg-start mb-0">
                             <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
@@ -113,6 +119,74 @@
         </div>
     </div>
     <!-- Hero End -->
+
+
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: Arial;
+          font-size: 17px;
+        }
+        
+        .container {
+          position: relative;
+          max-width: 800px;
+          margin: 0 auto;
+        }
+        
+        .container img {vertical-align: middle;}
+        
+        .container .content {
+          position: absolute;
+          bottom: 0;
+          background: rgb(0, 0, 0); /* Fallback color */
+          background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+          color: #f1f1f1;
+          width: 100%;
+          padding: 20px;
+        }
+        </style><h2>Responsive Image with Transparent Text</h2>
+
+<div class="container">
+  <img src="img\automation.jpg" alt="Notebook" style="width:100%;">
+  <div class="content">
+    <h1>Heading</h1>
+    <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+  </div>
+</div>
+
+
+    <h1>Internship Application Form</h1>
+    <form action="submit_internship_application.php" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        
+        <label for="university">University:</label><br>
+        <input type="text" id="university" name="university" required><br><br>
+        
+        <label for="major">Major:</label><br>
+        <input type="text" id="major" name="major" required><br><br>
+        
+        <label for="semester">Current Semester:</label><br>
+        <input type="number" id="semester" name="semester" min="1" required><br><br>
+        
+        <label for="resume">Upload Resume:</label><br>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br><br>
+        
+        <label for="cover_letter">Cover Letter:</label><br>
+        <textarea id="cover_letter" name="cover_letter" rows="4" cols="50" required></textarea><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
 
 
     <!-- Full Screen Search Start -->
@@ -134,111 +208,6 @@
         </div>
     </div>
     <!-- Full Screen Search End -->
-
-
-    <!-- Cloud Storage Solutions Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="about-img">
-                        <img class="img-fluid" src="img/about-img.jpg">
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Cloud Services</div>
-                    <h1 class="mb-4">Cloud Storage Solutions</h1>
-                    <p class="mb-4">Store, share, and access your data securely with Mindsscape's cloud storage solutions. Our scalable storage options ensure that your data is always available when you need it, with built-in redundancy for added peace of mind
-                    </p>
-                    <div class="d-flex align-items-center mt-4">
-                        <!-- <a class="btn btn-primary rounded-pill px-4 me-3" href="">Read More</a> -->
-                        <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Cloud Storage Solutions End -->
-
-
-    <!-- Cloud Computing Services Start -->
-    <div class="container-fluid bg-primary feature pt-5">
-        <div class="container pt-5">
-            <div class="row g-5">
-                <div class="col-lg-6 align-self-center mb-md-5 pb-md-5 wow fadeIn" data-wow-delay="0.3s">
-                    <!-- <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Why Choose Us</div> -->
-                    <h1 class="text-white mb-4">Cloud Computing Services</h1>
-                    <p class="text-light mb-4">Power your applications and workloads with Mindsscape's flexible cloud computing services. From virtual machines to serverless computing, our platform offers the resources and tools you need to innovate and grow your business
-                    </p>
-                    <div class="row g-4 pt-3"></div>
-                </div>
-            </div>
-            <div class="col-lg-6 align-self-end text-center text-md-end wow fadeIn" data-wow-delay="0.5s">
-                <img class="img-fluid" src="img/feature.png" alt="">
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Cloud Computing Services End -->
-
-
-<!-- Cloud Security Solutions Start -->
-<div class="container-fluid feature pt-5">
-<div class="container pt-5">
-    <div class="row g-5">
-        <div class="col-lg-6 align-self-end text-center text-md-start wow fadeIn" data-wow-delay="0.5s">
-            <img class="img-fluid" src="img/feature.png" alt="">
-        </div>
-        <div class="col-lg-6 align-self-center mb-md-5 pb-md-5 wow fadeIn" data-wow-delay="0.3s">
-            <h1 class="mb-4">Cloud Security Solutions</h1>
-            <p class="mb-4">Protect your sensitive data and infrastructure with Mindsscape's comprehensive cloud security solutions. Our advanced encryption, access controls, and compliance measures ensure that your information remains secure in the cloud
-            </p>
-        </div>
-    </div>
-</div>
-</div>
-<!-- Cloud Security Solutions End -->
-
-
-<!-- Backup and Disaster Recovery Start -->
-<div class="container-fluid bg-primary feature pt-5">
-    <div class="container pt-5">
-        <div class="row g-5">
-            <div class="col-lg-6 align-self-center mb-md-5 pb-md-5 wow fadeIn" data-wow-delay="0.3s">
-                <!-- <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Why Choose Us</div> -->
-                <h1 class="text-white mb-4">Backup and Disaster Recovery</h1>
-                <p class="text-light mb-4">Safeguard your business against data loss and downtime with Mindsscape's backup and disaster recovery services. With automated backups, data replication, and failover capabilities, we help you minimize disruptions and maintain business continuity
-                </p>
-                <div class="row g-4 pt-3">
-                </div>
-            </div>
-            <div class="col-lg-6 align-self-end text-center text-md-end wow fadeIn" data-wow-delay="0.5s">
-                <img class="img-fluid" src="img/feature.png" alt="">
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Backup and Disaster Recovery End -->
-
-<!-- Scalable Infrastructure Start -->
-<div class="container-fluid feature pt-5">
-<div class="container pt-5">
-    <div class="row g-5">
-        <div class="col-lg-6 align-self-center mb-md-5 pb-md-5 wow fadeIn" data-wow-delay="0.3s">
-            <h1 class="mb-4">Scalable Infrastructure</h1>
-            <p class="mb-4">Scale your resources on-demand with Mindsscape's flexible infrastructure solutions. Whether you're experiencing rapid growth or seasonal fluctuations, our cloud platform adapts to meet your changing needs, ensuring optimal performance at all times
-            </p>
-        </div>
-        <div class="col-lg-6 align-self-end text-center text-md-end wow fadeIn" data-wow-delay="0.5s">
-            <img class="img-fluid" src="img/feature.png" alt="">
-        </div>
-    </div>
-</div>
-</div>
-<!-- Scalable Infrastructure End -->
 
 
 <!-- Newsletter Start -->
