@@ -125,7 +125,7 @@
     <!-- Hero End -->
 
 
-    <!-- <section id="internship">
+    <section id="internship">
         <h2><a href="internship form.html">Internship Opportunities</a></h2>
         <p>Join us for an exciting internship experience where you can gain hands-on skills and valuable industry experience. Our internship programs provide opportunities for growth, mentorship, and collaboration with talented professionals in the field. Whether you're a student looking for practical experience or a recent graduate seeking to kick-start your career, we offer internship opportunities that will help you explore your potential and make a meaningful impact.</p>
     </section>
@@ -133,7 +133,7 @@
     <section id="job">
         <h2>Job Openings</h2>
         <p>Explore our current job openings and take the next step in your career journey. We are always looking for talented individuals who are passionate about what they do and eager to contribute to our team. From entry-level positions to senior roles, we offer diverse opportunities across various departments. Join us in our mission to drive innovation, solve complex challenges, and create positive change in the world.</p>
-    </section> -->
+    </section>
 
 
     <style>
@@ -148,7 +148,7 @@
             max-height: 500px;
         }
 
-        .content {
+        .left {
             flex: 1;
             max-height: 500px;
             display: flex;
@@ -156,11 +156,11 @@
             justify-content: center;
             text-align: center;
             padding: 20px;
-            flex-direction: column; /* Ensure content stacks vertically */
         }
 
-        .left .content {
-            order: 1; /* Change order to swap content position */
+        .right {
+            flex: 1;
+            max-height: 500px;
         }
 
         img {
@@ -172,25 +172,73 @@
         }
     </style>
 
-    <div class="container">
-        <div class="content left">
+<div class="container">
+    <div class="left">
+        <div>
             <h3><a href="internship form.html">Internship Opportunities</a></h3>
             <p>Join us for an exciting internship experience where you can gain hands-on skills and valuable industry experience. Our internship programs provide opportunities for growth, mentorship, and collaboration with talented professionals in the field. Whether you're a student looking for practical experience or a recent graduate seeking to kick-start your career, we offer internship opportunities that will help you explore your potential and make a meaningful impact</p>
         </div>
-        <div class="content right">
-            <img src="img\brain.jpg" alt="Image">
-        </div>
     </div>
+    <div class="right">
+        <img src="img\brain.jpg" alt="Image">
+    </div>
+</div>
 
-    <div class="container">
-        <div class="content left">
-            <img src="img\job opportunities.jpg" alt="Image">
-        </div>
-        <div class="content right">
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        display: flex;
+        max-height: 500px;
+    }
+
+    .left {
+        flex: 1;
+        max-height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .right {
+        flex: 1;
+            max-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        max-height: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+</style>
+
+
+<div class="container">
+    <div class="left">
+        <img src="img\job openings.jpg" alt="Image">
+    </div>
+    <div class="right">
+        <div>
             <h3>Job Openings</h3>
             <p>Explore our current job openings and take the next step in your career journey. We are always looking for talented individuals who are passionate about what they do and eager to contribute to our team. From entry-level positions to senior roles, we offer diverse opportunities across various departments. Join us in our mission to drive innovation, solve complex challenges, and create positive change in the world</p>
         </div>
     </div>
+</div>
+
 
     
 
@@ -263,6 +311,7 @@
                     <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
                     <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
                     <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
