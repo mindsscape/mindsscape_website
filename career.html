@@ -45,6 +45,10 @@
 
     <!-- Navbar Start -->
     <style>
+        .minds {
+            background-color: rgb(32, 74, 165);
+            color: white;
+        }
         .scape {
             background-color: white;
             color: rgb(32, 74, 165);
@@ -54,7 +58,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark p-0">
                 <a href="index.html" class="navbar-brand">
-                    <h1 class="text-white"><span class="scape">Mindsscape</span></h1>
+                    <h1 class="text-white"><span class="minds">Minds</span><span class="scape">scape</span></h1>
                 </a>
                 <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
@@ -121,73 +125,74 @@
     <!-- Hero End -->
 
 
+    <!-- <section id="internship">
+        <h2><a href="internship form.html">Internship Opportunities</a></h2>
+        <p>Join us for an exciting internship experience where you can gain hands-on skills and valuable industry experience. Our internship programs provide opportunities for growth, mentorship, and collaboration with talented professionals in the field. Whether you're a student looking for practical experience or a recent graduate seeking to kick-start your career, we offer internship opportunities that will help you explore your potential and make a meaningful impact.</p>
+    </section>
+
+    <section id="job">
+        <h2>Job Openings</h2>
+        <p>Explore our current job openings and take the next step in your career journey. We are always looking for talented individuals who are passionate about what they do and eager to contribute to our team. From entry-level positions to senior roles, we offer diverse opportunities across various departments. Join us in our mission to drive innovation, solve complex challenges, and create positive change in the world.</p>
+    </section> -->
+
+
     <style>
-        * {
-          box-sizing: border-box;
-        }
-        
         body {
-          font-family: Arial;
-          font-size: 17px;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
-        
+
         .container {
-          position: relative;
-          max-width: 800px;
-          margin: 0 auto;
+            display: flex;
+            max-height: 500px;
         }
-        
-        .container img {vertical-align: middle;}
-        
-        .container .content {
-          position: absolute;
-          bottom: 0;
-          background: rgb(0, 0, 0); /* Fallback color */
-          background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-          color: #f1f1f1;
-          width: 100%;
-          padding: 20px;
+
+        .content {
+            flex: 1;
+            max-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            flex-direction: column; /* Ensure content stacks vertically */
         }
-        </style><h2>Responsive Image with Transparent Text</h2>
 
-<div class="container">
-  <img src="img\automation.jpg" alt="Notebook" style="width:100%;">
-  <div class="content">
-    <h1>Heading</h1>
-    <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
-  </div>
-</div>
+        .left .content {
+            order: 1; /* Change order to swap content position */
+        }
 
+        img {
+            max-width: 100%;
+            height: auto;
+            max-height: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
 
-    <h1>Internship Application Form</h1>
-    <form action="submit_internship_application.php" method="POST">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
-        
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-        
-        <label for="phone">Phone:</label><br>
-        <input type="tel" id="phone" name="phone" required><br><br>
-        
-        <label for="university">University:</label><br>
-        <input type="text" id="university" name="university" required><br><br>
-        
-        <label for="major">Major:</label><br>
-        <input type="text" id="major" name="major" required><br><br>
-        
-        <label for="semester">Current Semester:</label><br>
-        <input type="number" id="semester" name="semester" min="1" required><br><br>
-        
-        <label for="resume">Upload Resume:</label><br>
-        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br><br>
-        
-        <label for="cover_letter">Cover Letter:</label><br>
-        <textarea id="cover_letter" name="cover_letter" rows="4" cols="50" required></textarea><br><br>
-        
-        <input type="submit" value="Submit">
-    </form>
+    <div class="container">
+        <div class="content left">
+            <h3><a href="internship form.html">Internship Opportunities</a></h3>
+            <p>Join us for an exciting internship experience where you can gain hands-on skills and valuable industry experience. Our internship programs provide opportunities for growth, mentorship, and collaboration with talented professionals in the field. Whether you're a student looking for practical experience or a recent graduate seeking to kick-start your career, we offer internship opportunities that will help you explore your potential and make a meaningful impact</p>
+        </div>
+        <div class="content right">
+            <img src="img\brain.jpg" alt="Image">
+        </div>
+    </div>
 
+    <div class="container">
+        <div class="content left">
+            <img src="img\job opportunities.jpg" alt="Image">
+        </div>
+        <div class="content right">
+            <h3>Job Openings</h3>
+            <p>Explore our current job openings and take the next step in your career journey. We are always looking for talented individuals who are passionate about what they do and eager to contribute to our team. From entry-level positions to senior roles, we offer diverse opportunities across various departments. Join us in our mission to drive innovation, solve complex challenges, and create positive change in the world</p>
+        </div>
+    </div>
+
+    
 
     <!-- Full Screen Search Start -->
     <div class="modal fade" id="searchModal" tabindex="-1">

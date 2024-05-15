@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>mindsscape - cloud services</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+</head>
+<body>
+
+    <h1>Internship Application Form</h1>
+    <form action="submit_internship_application.php" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        
+        <label for="university">University:</label><br>
+        <input type="text" id="university" name="university" required><br><br>
+        
+        <label for="major">Major:</label><br>
+        <input type="text" id="major" name="major" required><br><br>
+        
+        <label for="semester">Current Semester:</label><br>
+        <input type="number" id="semester" name="semester" min="1" required><br><br>
+        
+        <label for="resume">Upload Resume:</label><br>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br><br>
+        
+        <label for="cover_letter">Cover Letter:</label><br>
+        <textarea id="cover_letter" name="cover_letter" rows="4" cols="50" required></textarea><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
