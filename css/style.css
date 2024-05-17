@@ -30,6 +30,18 @@
 }
 
 
+/*** Heading design ***/
+.minds {
+    background-color: rgb(32, 74, 165);
+    color: white;
+}
+
+.scape {
+    background-color: white;
+    color: rgb(32, 74, 165);
+}
+
+
 /*** Heading ***/
 h1,
 h2,
