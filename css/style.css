@@ -11,12 +11,12 @@
 #spinner {
     opacity: 0;
     visibility: hidden;
-    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    transition: opacity .2s ease-out, visibility 0s linear .5s;
     z-index: 99999;
 }
 
 #spinner.show {
-    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    transition: opacity .2s ease-out, visibility 0s linear 0s;
     visibility: visible;
     opacity: 1;
 }
@@ -61,7 +61,7 @@ h6,
 /*** Button ***/
 .btn {
     font-weight: 500;
-    transition: .5s;
+    transition: .2s;
 }
 
 .btn-square {
@@ -94,7 +94,7 @@ h6,
 /*** Navbar ***/
 .sticky-top {
     top: -150px;
-    transition: .5s;
+    transition: .2s;
 }
 
 .navbar {
@@ -143,13 +143,13 @@ h6,
         top: 150%;
         opacity: 0;
         visibility: hidden;
-        transition: .5s;
+        transition: .2s;
     }
 
     .navbar .nav-item:hover .dropdown-menu {
         top: 100%;
         visibility: visible;
-        transition: .5s;
+        transition: .2s;
         opacity: 1;
     }
 }
@@ -251,7 +251,7 @@ h6,
     height: 90px;
     color: var(--primary);
     background: var(--light);
-    transition: .5s;
+    transition: .2s;
 }
 
 .service-item:hover .service-icon {
@@ -260,7 +260,7 @@ h6,
 
 .service-item h5,
 .service-item p {
-    transition: .5s;
+    transition: .2s;
 }
 
 .service-item:hover h5,
@@ -272,7 +272,7 @@ h6,
     position: relative;
     display: flex;
     color: var(--primary);
-    transition: .5s;
+    transition: .2s;
     z-index: 1;
 }
 
@@ -289,7 +289,7 @@ h6,
     left: 0;
     border-radius: 35px;
     background: var(--light);
-    transition: .5s;
+    transition: .2s;
     z-index: -1;
 }
 
@@ -337,7 +337,7 @@ h6,
 
 /*** Case Study ***/
 .case-item img {
-    transition: .5s;
+    transition: .2s;
 }
   
 .case-item:hover img {
@@ -430,7 +430,7 @@ h6,
     border: 1px solid var(--primary);
     border-radius: 40px;
     font-size: 18px;
-    transition: .5s;
+    transition: .2s;
 }
 
 .testimonial-carousel .owl-nav .owl-prev:hover,
@@ -453,7 +453,7 @@ h6,
     background: #FFFFFF;
     border: 1px solid var(--primary);
     border-radius: 15px;
-    transition: .5s;
+    transition: .2s;
 }
 
 .testimonial-carousel .owl-dot.active {
@@ -466,7 +466,7 @@ h6,
 .team-item {
     transition: .5s;
     border: 1px solid transparent;
-    transition: .5s;
+    transition: .2s;
 }
 
 .team-item:hover {
@@ -491,7 +491,7 @@ h6,
     color: rgba(255,255,255,.5);
     border: 1px solid rgba(256, 256, 256, .1);
     border-radius: 40px;
-    transition: .3s;
+    transition: .2s;
 }
 
 .footer .btn.btn-social:hover {
@@ -505,7 +505,7 @@ h6,
     text-align: left;
     color: rgba(255,255,255,.5);
     font-weight: normal;
-    transition: .3s;
+    transition: .2s;
 }
 
 .footer .btn.btn-link:hover {
