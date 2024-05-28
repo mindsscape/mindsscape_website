@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #chat-box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 300px;
+            height: 400px;
+            overflow-y: scroll;
+        }
+        #user-input {
+            width: 80%;
+        }
+        #send-button {
+            width: 18%;
+        }
+    </style>
+</head>
+<body>
+    <div id="chat-box"></div>
+    <input type="text" id="user-input" placeholder="Type a message">
+    <button id="send-button">Send</button>
+
+    <script>
+        const chatBox = document.getElementById('chat-box');
+        const userInput = document.getElementById('user-input');
+        const sendButton = document.getElementById('send-button');
+
+        // Function to add a message to the chat box
+        function addMessage(sender, message) {
+            chatBox.innerHTML += `<p><strong>${sender}:</strong> ${message}</p>`;
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        // Function to handle user input and generate a response
+        function handleUserInput() {
+            const message = userInput.value.trim();
+            if (message) {
+                addMessage('You', message); // Display user message
+                generateResponse(message); // Generate response
+                userInput.value = ''; // Clear input field
+            }
+        }
+
+        // Function to generate a response (replace with your AI logic)
+        function generateResponse(message) {
+            let response;
+            // Replace this with your AI logic to generate a response based on user input
+            if (message.toLowerCase().includes('hello')) {
+                response = 'Hi there!';
+            } else if (message.toLowerCase().includes('how are you')) {
+                response = 'I am doing well, thank you!';
+            } else {
+                response = 'I am just a simple chatbot. I may not understand everything.';
+            }
+            setTimeout(() => {
+                addMessage('Chatbot', response); // Display chatbot response
+            }, 500); // Delay for a more realistic feel
+        }
+
+        // Event listener for the send button
+        sendButton.addEventListener('click', handleUserInput);
+
+        // Event listener for pressing Enter in the input field
+        userInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                handleUserInput();
+            }
+        });
+    </script>
+</body>
+</html>
