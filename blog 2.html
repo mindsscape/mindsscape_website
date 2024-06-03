@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>mindsscape - aws iot things</title>
+    <link rel="icon" href="img\finalized_site_logo-removebg-preview.png">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="text-white"><span class="minds">Minds</span><span class="scape">scape</span></h1>
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <!-- <a href="service.html" class="nav-item nav-link">Services</a> -->
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                            <div class="dropdown-menu bg-light mt-2">
+                                <a href="ai_consulting.html" class="dropdown-item">AI Consulting</a>
+                                <a href="cloud_services.html" class="dropdown-item">Cloud Services</a>
+                                <a href="big_data_services.html" class="dropdown-item">Big Data Services</a>
+                                <a href="chatgpt_integration.html" class="dropdown-item">ChatGPT Integration</a>
+                                <a href="web_design.html" class="dropdown-item">Web Design</a>
+                                <a href="digital_marketing.html" class="dropdown-item">Digital Marketing</a>
+                            </div>
+                        </div>
+                        <a href="project.html" class="nav-item nav-link">Projects</a>
+                        <!-- <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu bg-light mt-2">
+                                <a href="feature.html" class="dropdown-item">Features</a>
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="faq.html" class="dropdown-item">FAQs</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div> -->
+                        <a href="career.html" class="nav-item nav-link">Career</a>
+                        <a href="blog.html" class="nav-item nav-link">Blog</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <butaton type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
+                        data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid pt-5 bg-primary hero-header">
+        <div class="container pt-5">
+            <div class="row g-5 pt-5">
+                <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+                    <h4 class="display-4 text-white mb-4 animated slideInRight">Gemini Nano for 9 pixel series</h4>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center justify-content-lg-start mb-0">
+                            <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="contact.html">Contact</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="blog.html">Blogs</a></li>
+                            <!-- <li class="breadcrumb-item" aria-current="page">Projects</li> -->
+                        </ol>
+                    </nav>
+                </div>
+                <div class="col-lg-6 align-self-end text-center text-lg-end">
+                    <img class="img-fluid" src="img\mindsscape_drone.png" alt="" style="max-height: 300px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(20, 24, 62, 0.7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn btn-square bg-white btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-light p-3"
+                            placeholder="Type search keyword">
+                        <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <div class="container-fluid feature pt-5">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <!-- <div class="col-lg-6 align-self-end text-center text-md-start wow fadeIn" data-wow-delay="0.5s">
+                    <img class="img-fluid" src="img\cloud security.jpg" alt="">
+                </div>-->
+                <div class="col-lg-6 align-self-center mb-md-5 pb-md-5 wow fadeIn" data-wow-delay="0.3s">
+                    <h1 class="mb-4">Google Unveils Enhanced Gemini Nano for Pixel 9 Series: Multimodal Capabilities and Hardware Requirements Explained</h1>
+                    <p class="mb-4">Posted on January 1, 2024 by Author</p>
+                    <p class="mb-4">Google‘s Pixel 9 series will introduce an upgraded version of Gemini Nano, the company announced at its annual developer conference, aka Google I/O, on Tuesday. The new version will boast multimodal capabilities and can discern context from images, videos, sounds, and spoken language. It requires more powerful hardware, specifically the Neural Processing Units (NPUs), and might not be compatible with older Pixels.
+                        Pixel 9 to bring an improved Gemini Nano
+                        Gemini Nano is a mini version of Google’s generative AI model Gemini (formerly Bard). It is designed to run on smartphones and is the brain behind certain on-device AI features on the Pixel 8 series, including the Pixel 8a. The tool powers the Summarize feature in the Recorder app and Smart Reply in Gboard, among other things. However, its functionality is mostly limited to processing text inputs.
+                        
+                        <h4>Advertisement</h4>
+                        With the Pixel 9 series, Google plans to add new capabilities to Gemini Nano. A teaser posted by the company shows the AI tool explaining the scene in front of the device using its camera. “Hey, what do you think is happening here?” Gemini Nano is asked, pointing to the stage before the Google I/O kicked off. It identified the scene. “It looks like people are setting up for a large event, perhaps a conference or presentation,” it replied.
+                        
+                        The tool goes on to converse about the scene with the user, responding to various questions. The demo suggests the upgraded version of Gemini Nano can identify real-world images and discern context accurately. Google plans to use the tool to improve its TalkBack feature to help people with blindness or low vision. It can describe unlabeled photos better than before without requiring an active internet connection.
+                    </p>
+                </div>
+                <div class="col-lg-6 align-self-end text-center text-md-end wow fadeIn" data-wow-delay="0.5s">
+                    <img class="img-fluid" src="img\blog post 1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Newsletter Start -->
+<div class="container-fluid bg-primary newsletter py-5">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-md-5 ps-lg-0 pt-5 pt-md-0 text-start wow fadeIn" data-wow-delay="0.3s">
+                <img class="img-fluid" src="img/newsletter.png" alt="">
+            </div>
+            <div class="col-md-7 py-5 newsletter-text wow fadeIn" data-wow-delay="0.5s">
+                <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Newsletter</div>
+                <h1 class="text-white mb-4">Let's subscribe the newsletter</h1>
+                <div class="position-relative w-100 mt-3 mb-2">
+                    <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
+                        placeholder="Enter Your Email" style="height: 48px;">
+                    <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                            class="fa fa-paper-plane text-primary fs-4"></i></button>
+                </div>
+                <small class="text-white-50">We'll send you the notification once a month</small>
+                <!-- <small class="text-white-50">Stay in the know! Get updates and exclusive offers straight to your inbox</small> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Newsletter End -->
+
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-white-50 footer pt-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                <a href="index.html" class="d-inline-block mb-3">
+                    <h1 class="text-white"><span class="minds">Minds</span><span class="scape">scape</span></h1>
+                </a>
+                <p class="mb-0">Elevate your business with Minds Scape's innovative AI solutions, cloud services, and big data expertise. 
+                    Unlock new possibilities and drive growth with our tailored technology solutions
+                </p>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                <h5 class="text-white mb-4">Get In Touch</h5>
+                <p><i class="fa fa-map-marker-alt me-3"></i>Electric City, Bangalore</p>
+                <!-- <p><i class="fa fa-phone-alt me-3"></i>Electric City, Bangalore</p> -->
+                <p><i class="fab fa-whatsapp me-3"></i>+91 8220 850 596</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href="https://youtube.com/@mindsscape-ji3ml?si=k4rbcIiblM8IxC0_"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/mindsscape_20?igsh=MTEwa3FrbWc0eTBrbA=="><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/mindsscape/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B4jssP4YjTMqB4J6P3H0t%2FA%3D%3D"><i class="fab fa-linkedin-in"></i></a>
+                    <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a> -->
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                <h5 class="text-white mb-4">Popular Link</h5>
+                <a class="btn btn-link" href="about.html">About Us</a>
+                <a class="btn btn-link" href="contact.html">Contact Us</a>
+                <!-- <a class="btn btn-link" href="">Privacy Policy</a>
+                <a class="btn btn-link" href="">Terms & Condition</a> -->
+                <a class="btn btn-link" href="career.html">Career</a>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                <h5 class="text-white mb-4">Our Services</h5>
+                <a class="btn btn-link" href="ai_consulting.html">AI Consulting</a>
+                    <a class="btn btn-link" href="cloud_services.html">Cloud Services</a>
+                    <a class="btn btn-link" href="big_data_services.html">Big Data Services</a>
+                    <a class="btn btn-link" href="chatgpt_integration.html">ChatGPT Integration</a>
+                    <a class="btn btn-link" href="web_design.html">Web Design</a>
+                    <a class="btn btn-link" href="digital_marketing.html">Digital Marketing</a>
+            </div>
+        </div>
+    </div>
+    <div class="container wow fadeIn" data-wow-delay="0.1s">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">mindsscape</a>, All Right Reserved.
+
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    <!-- Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a> -->
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-menu">
+                        <!-- <a href="">Home</a>
+                        <a href="">Cookies</a>
+                        <a href="">Help</a>
+                        <a href="">FAQs</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js">
+    window.embeddedChatbotConfig = {
+chatbotId: "0kbCMsuCp1Y9EVYjw_q8E",
+domain: "www.chatbase.co"
+}
+</script>
+<script
+src="https://www.chatbase.co/embed.min.js"
+chatbotId="0kbCMsuCp1Y9EVYjw_q8E"
+domain="www.chatbase.co"
+defer>
+
+</script>
+</body>
+
+</html>
